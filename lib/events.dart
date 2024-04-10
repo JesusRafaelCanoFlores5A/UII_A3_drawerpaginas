@@ -18,26 +18,40 @@ class _EventsPageState extends State<EventsPage> {
           const Text("Jesús Rafael Cano Flores",
               style: TextStyle(
                 fontSize: 25,
-                color: Color(0xff7c5d08),
+                color: Color(0xff8c4f16),
               )),
           Container(
             margin: const EdgeInsets.all(40),
-            padding: const EdgeInsets.all(20),
+            width: 300,
+            height: 90,
+            alignment: Alignment.centerLeft,
             decoration: BoxDecoration(
-              color: const Color(0xffffcd5f),
-              borderRadius: BorderRadius.circular(20),
+              color: const Color(0xffb45a11), //blue
+              borderRadius: BorderRadius.circular(45),
             ),
-            child: const Text(
-              'Bienvenido a Comex',
-              style: TextStyle(
-                fontSize: 38,
-                color: Color(0xff7c5d08),
+            child: Container(
+              width: 210,
+              height: 90,
+              decoration: const BoxDecoration(
+                color: Color(0xffde7520), //light blue
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(45),
+                  bottomLeft: Radius.circular(45),
+                ),
+              ),
+              alignment: Alignment.center,
+              child: const Text(
+                'Comex',
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.white,
+                ),
               ),
             ),
           ),
           const Text(
             "Mat. 21308051280440",
-            style: TextStyle(fontSize: 25, color: Color(0xff7c5d08)),
+            style: TextStyle(fontSize: 25, color: Color(0xff8c4f16)),
           )
         ],
       ),

@@ -18,40 +18,37 @@ class _ContactsPageState extends State<ContactsPage> {
           const Text("Jesús Rafael Cano Flores",
               style: TextStyle(
                 fontSize: 25,
-                color: Color(0xff9d3005),
+                color: Color(0xff980907),
               )),
           Container(
-            margin: const EdgeInsets.all(40),
-            width: 300,
-            height: 90,
-            alignment: Alignment.centerLeft,
-            decoration: BoxDecoration(
-              color: const Color(0xffd96a10), //blue
-              borderRadius: BorderRadius.circular(45),
-            ),
-            child: Container(
-              width: 210,
-              height: 90,
-              decoration: const BoxDecoration(
-                color: Color(0xfff27815), //light blue
-                borderRadius: BorderRadius.only(
-                  topLeft: Radius.circular(45),
-                  bottomLeft: Radius.circular(45),
-                ),
+            height: 130,
+            width: double.infinity,
+            decoration: const BoxDecoration(
+              color: Color(0xffb41d1b),
+              borderRadius: BorderRadius.only(
+                bottomRight: Radius.circular(50),
+                bottomLeft: Radius.circular(50),
               ),
-              alignment: Alignment.center,
-              child: const Text(
-                'Comex',
-                style: TextStyle(
-                  fontSize: 32,
-                  color: Colors.white,
+              boxShadow: [
+                BoxShadow(
+                  color: Color(0xb4491616),
+                  offset: Offset(9, 9),
+                  blurRadius: 6,
                 ),
+              ],
+            ),
+            alignment: Alignment.center,
+            child: const Text(
+              'Comex Cano',
+              style: TextStyle(
+                fontSize: 38,
+                color: Colors.white,
               ),
             ),
           ),
           const Text(
             "Mat. 21308051280440",
-            style: TextStyle(fontSize: 25, color: Color(0xff9d3005)),
+            style: TextStyle(fontSize: 25, color: Color(0xff980907)),
           )
         ],
       ),
